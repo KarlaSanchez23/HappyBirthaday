@@ -1,0 +1,85 @@
+*{
+    background-image: url(./imagenes/fondo.png);
+}
+
+h1{
+    font-size: 30px;
+    text-align: center;
+    color: blue;
+
+}
+h2{
+    font-size: 25px;
+    text-align: center;
+    color: crimson;
+}
+h3{
+    font-size: 19px;
+    color: darkolivegreen;
+    font-family:'Times New Roman';
+}
+
+
+.animado{
+    width: 100px;
+    height: 150px;
+    position: absolute;
+    top: -1px;
+    
+}
+.animado2{
+    width: 127px;
+    height: 120px;
+    position: absolute;
+    top: 10px;
+    right: calc(65px - 50px);
+}
+
+.img-inicio{
+    width: 30%;
+    height: 40%;
+    margin-left: 480px;
+    margin-top: 100px;
+}
+.img-inicio1{
+    width: 20%;
+    height: 30%;
+    margin-left: 110px;
+    margin-top: 10px;
+}
+.foti-ale{
+    width: 20%;
+    height: 30%;
+    margin-left: 170px;
+    margin-top: 10px;
+}
+.img-inicio2{
+    width: 20%;
+    height: 30%;
+    margin-left: 1000px;
+    margin-top: -195px;    
+}
+
+.img-inicio3{
+    width: 20%;
+    height: 30%;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.foti-ale1{
+    width: 20%;
+    height: 30%;
+    margin-left: 1000px;
+    margin-top: -195px;
+}
+
+.carta{
+    width: 650px;
+    height: 750px;
+    margin-left: 380px;
+}
+
+img{
+    width: 90px;
+    height: 80px;
+}

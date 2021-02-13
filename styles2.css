@@ -1,0 +1,14 @@
+*{
+    background-image: url(./imagenes/fondo2.png);
+}
+
+h1{
+    font-size: 35px;
+    text-align: center;
+    color: rgb(65, 10, 88);
+}
+.frasquito{
+    width: 400px;
+    height: 550px;
+    margin-left: 500px;
+}

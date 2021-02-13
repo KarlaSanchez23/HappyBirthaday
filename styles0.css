@@ -1,0 +1,33 @@
+*{
+    background-image: url(./imagenes/fondo2.png);
+}
+img{
+    width: 90px;
+    height: 80px;
+    
+}
+h1{
+    font-size: 30px;
+    text-align: center;
+    color: rgb(37, 2, 2);
+    
+}
+h2{
+    font-size: 25px;
+    text-align: center;
+    color: rgb(51, 2, 44);
+    margin-top: 40px;
+}
+
+.boton{
+    cursor: pointer;
+    background: coral;
+    font-size: 30px;
+    width: 250px;
+    height: 90px;
+    margin-left: 550px;
+    margin-top: 200px;
+}
+.boton:hover{
+    color:darkblue;
+}

@@ -1,0 +1,23 @@
+*{
+    background-image: url(./imagenes/fondo2.png);
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(141, 7, 52);
+}
+
+.sorpri{
+    width: 250px;
+    height: 300px;
+    margin-left: 550px;
+    margin-top: 50px;
+}
+
+p{
+    font-size: 28px;
+    font-family:Georgia;
+    text-align: center;
+    margin-top: 10px;
+}

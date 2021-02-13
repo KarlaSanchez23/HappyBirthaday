@@ -1,0 +1,14 @@
+*{
+    background-image: url(./imagenes/fondo2.png);
+}
+.carta{
+    width: 650px;
+    height: 750px;
+    margin-left: 380px;
+    margin-top: -50px;
+}
+
+img{
+    width: 90px;
+    height: 80px;
+}

@@ -1,0 +1,71 @@
+*{
+    background-image: url(./imagenes/fondo.png);
+}
+img{
+    width: 90px;
+    height: 80px;
+    
+}
+
+.feliz{
+    width: 500px;
+    height: 250px;
+    margin-left: 410px;
+    margin-top: -110px;
+}
+
+.girasol1{
+    width: 200px;
+    height: 110px;
+    margin-left: 140px;
+    margin-top: -90px;
+}
+
+.girasol2{
+    width: 200px;
+    height: 110px;
+    margin-left: 580px;
+    margin-top: -90px;
+}
+
+.mesi{
+    width: 640px;
+    height: 250px;
+    margin-left: 330px;
+    margin-top: 140px;
+}
+
+.chupe{
+    width: 180px;
+    height: 160px;
+    margin-left:360px ;
+    margin-top: -404px;
+}
+
+.torti{
+    width: 200px;
+    height: 160px;
+    margin-left:530 ;
+    margin-top: -423px;
+}
+
+.cup{
+    width: 170px;
+    height: 140px;
+    margin-left:9px ;
+    margin-top: -403px;
+}
+
+.globi{
+    width: 300px;
+    height: 400px;
+    margin-right: 600px;
+    margin-top: -460px;
+}
+
+.letra{
+    width: 300px;
+    height: 400px;
+    margin-top: -430px;
+    margin-left: 440px;
+}

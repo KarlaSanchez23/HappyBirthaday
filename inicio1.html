@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Happy Birthday</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles1.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="imagenes/ali1.jpg">
+    <script src="js/bootstrap.min.js"></script>
+   
+  </head>
+  <body>
+    <div class="col-md-12">
+      <h1>CRUCIGRAMA FELIZ</h1>
+      <h2>Si resuelves el crucigrama, podrás abrir el cofre</h2> <br>
+
+      <div id="mensaje"></div>
+
+      <table class="table">
+        <tr>
+          <td>
+            Horizontales<br />
+            - <img src="imagenes/abaco.png" width="50" /><br />
+            - <img src="imagenes/uva.jpg" width="50" /><br />
+          </td>
+          <td>
+            Verticales<br />
+            - <img src="imagenes/casa.jpg" width="50" /><br />
+            - <img src="imagenes/luna.jpg" width="50" /><br />
+          </td>
+        </tr>
+      </table>
+
+      <table class="table">
+        <tr>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila1C1" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila1C2" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila1C3" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila1C4" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila1C5" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila1C6" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila2C1" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila2C2" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila2C3" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila2C4" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila2C5" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila2C6" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila3C1" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila3C2" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila3C3" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila3C4" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila3C5" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila3C6" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila4C1" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila4C2" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila4C3" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila4C4" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila4C5" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila4C6" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila5C1" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila5C2" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila5C3" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila5C4" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila5C5" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila5C6" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila6C1" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila6C2" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila6C3" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila6C4" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila6C5" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila6C6" />
+          </td>
+        </tr>
+      </table>
+
+      <script>
+        // Deshabilitar todos los campos
+        for(fila=1; fila<=6; fila++){
+          for(columna=1;columna<=6;columna++){
+            document.getElementById("fila"+fila+"C"+columna).readOnly=true;
+          }
+        }
+
+
+        var palabra1_letra1 = document.getElementById("fila1C1");
+        var palabra1_letra2 = document.getElementById("fila1C2");
+        var palabra1_letra3 = document.getElementById("fila1C3");
+        var palabra1_letra4 = document.getElementById("fila1C4");
+        var palabra1_letra5 = document.getElementById("fila1C5");
+
+        var palabra2_letra1 = document.getElementById("fila4C2");
+        var palabra2_letra2 = document.getElementById("fila4C3");
+        var palabra2_letra3 = document.getElementById("fila4C4");
+
+        var palabra3_letra1 = document.getElementById("fila1C4");
+        var palabra3_letra2 = document.getElementById("fila2C4");
+        var palabra3_letra3 = document.getElementById("fila3C4");
+        var palabra3_letra4 = document.getElementById("fila4C4");
+
+        var palabra4_letra1 = document.getElementById("fila3C2");
+        var palabra4_letra2 = document.getElementById("fila4C2");
+        var palabra4_letra3 = document.getElementById("fila5C2");
+        var palabra4_letra4 = document.getElementById("fila6C2");
+
+        //Habilitar las casillas necesarias (horizontales)
+        palabra1_letra1.readOnly =false;
+        palabra1_letra2.readOnly =false;
+        palabra1_letra3.readOnly =false;
+        palabra1_letra4.readOnly =false;
+        palabra1_letra5.readOnly =false;
+
+        palabra2_letra1.readOnly =false;
+        palabra2_letra2.readOnly =false;
+        palabra2_letra3.readOnly =false;
+
+        //Habilitar las casillas necesarias (verticales)
+        palabra3_letra1.readOnly =false;
+        palabra3_letra2.readOnly =false;
+        palabra3_letra3.readOnly =false;
+        palabra3_letra4.readOnly =false;
+
+        palabra4_letra1.readOnly =false;
+        palabra4_letra2.readOnly =false;
+        palabra4_letra3.readOnly =false;
+        palabra4_letra4.readOnly =false;
+
+        for(fila=1; fila<=6; fila++){
+          for(columna=1;columna<=6;columna++){
+            if(document.getElementById("fila"+ fila +"C" + columna).readOnly==false){
+               document.getElementById("fila"+ fila +"C" + columna).style.backgroundColor="crimson";
+            }
+          }
+        }
+
+        var errorActivo=0;
+        function error(){
+          document.getElementById("mensaje").innerHTML="Corrige o completa las palabras";
+          document.getElementById("mensaje").className="alert alert-danger";
+          errorActivo=1;
+        }
+
+        //esta funcion es para ejecutarse cada 5 segundos
+        setInterval('ocultarError()',5000);
+
+        function ocultarError(){
+          if(errorActivo==1){
+            document.getElementById("mensaje").innerHTML="";
+            document.getElementById("mensaje").className="";
+            errorActivo=0;
+          }
+        }
+
+        function verificar(){
+          document.getElementById("mensaje").innerHTML="";
+          palabra1 = palabra1_letra1.value + palabra1_letra2.value + palabra1_letra3.value + palabra1_letra4.value + palabra1_letra5.value; 
+          palabra2 = palabra2_letra1.value + palabra2_letra2.value + palabra2_letra3.value; 
+          palabra3 = palabra3_letra1.value + palabra3_letra2.value + palabra3_letra3.value + palabra3_letra4.value; 
+          palabra4 = palabra4_letra1.value + palabra4_letra2.value + palabra4_letra3.value + palabra4_letra4.value;
+
+          if(palabra1.toLowerCase()=="abaco" && palabra2.toLowerCase()=="uva" && palabra3.toLowerCase()=="casa" && palabra4.toLowerCase()=="luna"){
+            window.location.href="cofre.html";
+            document.getElementById("mensaje").className="alert alert-success";
+          }else{
+            if(palabra1.toLowerCase()!="abaco"){
+               palabra1_letra1.value="";
+               palabra1_letra2.value="";
+               palabra1_letra3.value="";
+               palabra1_letra4.value="";
+               palabra1_letra5.value="";
+               error();
+            }
+
+            if(palabra2.toLowerCase()!="uva"){
+               palabra2_letra1.value="";
+               palabra2_letra2.value="";
+               palabra2_letra3.value="";
+               error();
+            }
+
+            if(palabra3.toLowerCase()!="casa"){
+               palabra3_letra1.value="";
+               palabra3_letra2.value="";
+               palabra3_letra3.value="";
+               error();
+            }
+
+            if(palabra4.toLowerCase()!="luna"){
+               palabra4_letra1.value="";
+               palabra4_letra2.value="";
+               palabra4_letra3.value="";
+               palabra4_letra4.value="";
+               error();
+            }
+
+            //corrector de palabras
+            if(palabra1.toLowerCase()=="abaco"){
+               palabra1_letra4.value="c";
+            }
+
+            if(palabra2.toLowerCase()=="uva"){
+               palabra2_letra1.value="u";
+            }
+
+            if(palabra3.toLowerCase()=="casa"){
+               palabra3_letra1.value="c";
+               palabra3_letra4.value="a";
+            }
+
+            if(palabra2.toLowerCase()=="luna"){
+               palabra4_letra2.value="u";
+            }
+
+          }
+        }
+
+      </script>
+
+      <img class="boton-cofre" src="imagenes/cofre.jpg" onClick="verificar()"/>
+    </div>
+
+  </body>
+</html>

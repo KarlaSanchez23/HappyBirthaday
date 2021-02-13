@@ -1,0 +1,82 @@
+*{
+    background-image: url(./imagenes/fondo.png);
+}
+img{
+    width: 90px;
+    height: 80px;
+    
+}
+h1{
+    font-size: 27px;
+    text-align: center;
+    color: rgb(204, 50, 11);
+    margin-top: -60px;
+}
+h2{
+    font-size: 24px;
+    text-align: center;
+    color: rgb(3, 107, 148);
+    margin-top: 40px;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: -400px;
+    gap: 40px;
+    margin-top: 70px;
+    justify-items: center;
+    align-items: center;
+}
+
+.card img{
+    height: 140px;
+    width: 165px;
+    
+}
+
+
+.imagen-port{
+    width: 30%;
+    margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+    object-fit: cover;
+    margin: 15.5px ;
+}
+
+.imagen-port > img{
+    width: 300%;
+    height: 200%;
+    object-fit: cover;
+    
+}
+.hover-galeria{
+    position: absolute;
+    width: 300%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: rgba(233, 72, 113, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 40px;
+}
+
+.hover-galeria p{
+    color: rgb(38, 13, 179);
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
